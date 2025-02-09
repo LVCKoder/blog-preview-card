@@ -1,0 +1,156 @@
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --grey-950: hsl(0, 0%, 7%);
+  --gray-500: hsl(0, 0%, 42%);
+}
+
+@font-face {
+  font-family: Figtree;
+  src: url('./assets/fonts/Figtree-VariableFont_wght.ttf') format('TrueType');
+  font-weight: 100 900;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Figtree, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--yellow);
+  padding: 1rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 20.438rem;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 1.25rem;
+  box-shadow: 0.5rem 0.5rem 0 0 black;
+  outline: 1px solid var(--grey-950);
+}
+
+.content {
+  max-width: 17.438rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.image-wrapper {
+  width: 100%;
+  min-height: 12.5rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 0.625rem;
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  object-fit: cover;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+main a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 150%;
+  color: var(--gray-950);
+}
+
+main a:hover {
+  color: var(--yellow);
+}
+
+.category {
+  padding: 0.25em 0.75em;
+  background-color: var(--yellow);
+  color: var(--grey-950);
+  border-radius: 0.25rem;
+  font-weight: 800;
+  font-size: 0.75rem;
+  line-height: 150%;
+  align-self: flex-start;
+}
+
+time {
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 150%;
+  color: var(--grey-950);
+}
+
+p {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 150%;
+  color: var(--gray-500);
+}
+
+footer figure {
+  width: 8.063rem;
+  height: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.avatar-image {
+  width: 2rem;
+}
+
+.author-name {
+  color: var(--grey-950);
+  font-size: 0.875rem;
+  font-weight: 800;
+  line-height: 150%;
+}
+
+figure {
+  margin: 0;
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 24rem;
+    min-height: 32.625rem;
+  }
+
+  .content {
+    width: 21rem;
+  }
+
+  .image-wrapper {
+    width: 21rem;
+    height: 12.5rem;
+  }
+
+  main a {
+    font-size: 1.5rem;
+  }
+
+  .category {
+    font-size: 0.875rem;
+  }
+
+  time {
+    font-size: 0.875rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
